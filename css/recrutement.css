@@ -47,4 +47,33 @@
   .recrutement img {
     height: 550px;
   }
+  .nos-offres,
+  .multispecialiste,
+  .rencontrez {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .nos-offres section,
+  .multispecialiste section,
+  .rencontrez section {
+    padding: 20px 0;
+  }
+  .nos-offres section,
+  .multispecialiste section,
+  .rencontrez section,
+  .nos-offres section a,
+  .multispecialiste section a,
+  .rencontrez section a,
+  .nos-offres section a img,
+  .multispecialiste section a img,
+  .rencontrez section a img {
+    width: 100%;
+  }
+  .nos-offres section a img,
+  .multispecialiste section a img,
+  .rencontrez section a img {
+    height: 500px;
+  }
 }
