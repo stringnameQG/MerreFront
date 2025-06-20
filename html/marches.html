@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Merré</title>
+  <link rel="stylesheet" href="../css/Merre.css">
+  <link rel="stylesheet" href="../css/marches.css">
+  <link rel="stylesheet" href="../css/formulaire-contacte.css">
+  <link rel="icon" href="../Icon/Logo-Merre.png">
+</head>
+
+<script>
+function MenuAnimation(x) {
+  x.classList.toggle("change");
+
+  const MENU_NAV = document.querySelector("nav");
+        MENU_NAV.classList.toggle("nav-expense");
+}
+function SousMenuOpen(x) {
+  x.children[1].classList.toggle("column");
+}
+</script>
+
+<body>
+  <header>
+    <img class="logo" src="../Picture/Merré.png" alt="Logo Merré" decoding="async">
+    <h1>1921 à 2025, depuis plus de 100 ans à votre service</h1>
+    
+    <div class="div-menu-container">
+      <div class="menu-container" onclick="MenuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="menu-title">MENU</p>
+    </div>
+  </header>
+  <nav>
+    <a class="nav-item" href="accueil.html">Accueil</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="marches.html">Marchés</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html">Dragage</a>
+        <a href="remorquage.html">Remorquage</a>
+        <a href="pilotage.html">Pilotage</a>
+        <a href="travaux-portuaires.html">Travaux portuaires</a>
+        <a href="defense.html">Défense</a>
+        <a href="environnement.html">Environnement</a>
+        <a href="transport-maritime.html">Transport Maritime</a>
+        <a href="transport-public.html">Transport public</a>
+      </div>
+    </div>
+    <a class="nav-item" href="produits.html">Produits</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html">Services</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="gestion-projet.html">Gestion de projet</a>
+        <a href="ingenierie.html">Ingénierie</a>
+        <a href="fabrication-sur-mesure.html">Fabrication sur mesure</a>
+        <a href="mise-en-service.html">Mise en service</a>
+        <a href="service-apres-vente.html">Service Après-Vente</a>
+      </div>
+    </div>
+    <a class="nav-item" href="qualite.html">Qualité</a>
+    <a class="nav-item" href="ingenierie.html">Ingénierie</a>
+    <a class="nav-item" href="notre-entreprise.html">Notre entreprise</a>
+    <a class="nav-item" href="notre-groupe.html">Notre groupe</a>
+    <a class="nav-item" href="Recrutement.html">Recrutement</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html"><img class="nav-icon" src="../Icon/Flag_of_France.svg" decoding="async"></a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html"><img class="nav-icon" src="../Icon/Flag_of_the_United_Kingdom.svg" decoding="async"></a>
+      </div>
+    </div>
+  </nav>
+  <main class="marches">
+    <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2020/12/DSC01962-e1612250400687.jpg?resize=2000%2C800&ssl=1">
+    <h4>MARCHÉS</h4>
+    <p>Merré a construit de nombreux navires sur mesure. Quel que soit le marché, vous trouverez des thèmes communs qui définissent nos navires : utilisation de technologies éprouvées, artisanat de haute qualité, et faible coût d'utilisation.</p>
+    <article>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/08/65398-9839342-375x260.jpg?resize=375%2C260&ssl=1"></a>
+        <a><h5>DRAGAGE</h5></a>
+        <p>Merré est le seul chantier naval Français spécialiste du dragage, maîtrisant le dragage en mouvement, le dragage stationnaire, le procédé de dragage genflo, et l'ensemble des équipements de dragage.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2018/05/1-e1612250830658-375x260.jpg?resize=375%2C260&ssl=1"></a>
+        <a><h5>REMORQUAGE</h5></a>
+        <p>Dans les ports, les travaux sont très diversifiés. Nos différents remorqueurs sont conçus et construits pour répondre spécifiquement aux différents besoins de tous les travaux portuaires.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2018/06/file-e1612252004951-375x260.jpeg?resize=375%2C260&ssl=1"></a>
+        <a><h5>PILOTAGE</h5></a>
+        <p>Les manœuvres à proximité des ports sont toujours complexes. Nos différents navires de pilotage sont conçus et construits pour répondre spécifiquement aux besoins des marins qui les exploitent.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/pap-375x260.jpg?resize=375%2C260&ssl=1"></a>
+        <a><h5>TRAVAUX PORTUAIRES</h5></a>
+        <p>Dans les ports, les travaux sont très diversifiés. Nos différents navires sont conçus et construits pour répondre spécifiquement aux différents besoins de chacun des services portuaires.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2019/12/ob_848ea1ff80210a5e625743b0cf8ad3c0_p1110924-375x260.jpg?resize=375%2C260&ssl=1"></a>
+        <a><h5>DÉFENSE</h5></a>
+        <p>Merré vient de démarrer l'histoire pour la construction de navire de défense. Nous appliquons les mêmes critères de sécurité, de comportement, et de fiabilité de nos navires qui ont fait notre renommée.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/08/IMG_0632-375x260.jpg?resize=375%2C260&ssl=1"></a>
+        <a><h5>ENVIRONNEMENT</h5></a>
+        <p>Merré travaille avec les autorités portuaires, les armateurs et les opérateurs pour fournir les produits dont ils ont besoin pour protéger l'environnement et leur zones de travail. Nous proposons des navires polyvalents proposant des services de lutte contre l'incendie et lutte contre la pollution.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+    </article>
+    <aside class="formulaire">
+      <h4>CONTACT</h4>
+      <div class="formulaire-contacte">
+        <p>Pour des questions générales, veuillez utiliser le formulaire de contact suivant :</p>
+        <div>
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" placeholder="required">
+        </div>
+        <div>
+					<label for="prénom">Prénom </label>
+					<input type="text" name="prénom " id="prénom" placeholder="required">
+        </div>
+        <div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="required">
+        </div>
+        <div>
+					<label for="objet">Objet</label>
+					<input type="text" name="objet" id="objet" placeholder="required">
+        </div>
+        <div>
+					<label for="tel">Téléphone</label>
+					<input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+					<label for="pays">Pays</label>
+					<input type="text" name="pays" id="pays" placeholder="required">
+        </div>
+        <div class="questions">
+					<label for="questions">Questions / Commentaires ?</label>
+					<textarea name="questions" id="questions" placeholder="required"></textarea>
+        </div>
+        <input class="submit" type="submit" value="Envoyer">
+			</div>
+      <div class="infos-societe">
+	      <h4>Société des Établissements Merré</h4>
+        <p><strong>Tél. :</strong> +33 (0)2 40 29 50 44</p>
+        <p><strong>Fax :</strong> +33 (0)2 40 29 52 56</p>
+        <p><strong>Email :</strong> contact@merre.fr</p>
+        <p><strong>Adresse :</strong><br>Route de Nantes<br>B.P. 57<br>44390<br>Nort sur Erdre<br>FRANCE</p><p><strong>Horaires d'ouverture :</strong><br>du lundi au jeudi :<br>07h30 à 12h00 et 13h00 à 16h00<br>le vendredi :<br>07h30 à 12h00 et 13h00 à 15h30</p>
+        <a href="https://goo.gl/maps/KfWdxN7yQM22" target="_blank" class="wpz-btn wpz-btn-1 ">Voir dans Google Maps</a>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
+    <a class="footer-link" href="informatiques-et-libertes.html">Informatiques et libertés</a>
+    <p class="p-link">Copyright © 2025 MERRÉ</p>
+  </footer>
+</body>
+</html>

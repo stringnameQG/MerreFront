@@ -1,0 +1,106 @@
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #d5d3db;
+}
+.formulaire h4 {
+  margin: 10px 0;
+}
+.formulaire h4,
+.formulaire-contacte p,
+.infos-societe h4,
+.infos-societe p,
+.infos-societe a {
+  padding: 0;
+}
+.formulaire-contacte {
+  width: 63%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.formulaire-contacte p {
+  width: 100%;
+}
+.formulaire-contacte div {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.formulaire-contacte div label {
+  width: min-content;
+}
+.formulaire-contacte div input {
+  padding: 10px 15px;
+  width: 70%;
+  height: min-content;
+}
+#tel {
+  width: 50%;
+}
+.formulaire-contacte .questions {
+  width: 100%;
+  align-items: flex-start;
+}
+.formulaire-contacte .questions label {
+  width: 25%;
+}
+.formulaire-contacte .questions textarea {
+  width: 70%;
+  height: 100%;
+}
+.formulaire-contacte .submit,
+.infos-societe a {
+  border: solid 0px black;
+  padding: 12px 15px;
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+  background-color: #1c3d63;
+  color: white;
+}
+.formulaire-contacte .submit:hover,
+.infos-societe a:hover {
+  background-color: #B22F1E;
+  transition: background-color 100ms linear;
+}
+.infos-societe {
+  width: 32%;
+}
+.infos-societe h4 {
+  font-size: 1.4rem;
+  color: #224b7b;
+}
+
+
+
+@media (width < 1200px) {
+  .formulaire,
+  .formulaire .formulaire-contacte, 
+  .formulaire .infos-societe {
+    flex-direction: column;
+
+  }
+  .formulaire .formulaire-contacte, 
+  .formulaire .infos-societe,
+  .formulaire .formulaire-contacte div,
+  .formulaire .infos-societe div {
+    width: 100%;
+  }
+  .formulaire-contacte div label,
+  .formulaire-contacte div input,
+  .formulaire-contacte .submit,
+  .formulaire-contacte .questions textarea,
+  .infos-societe a {
+    font-size: 1.8rem;
+  }
+  .infos-societe h4 {
+    font-size: 2rem;
+  }
+}

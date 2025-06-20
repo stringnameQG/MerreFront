@@ -1,0 +1,16 @@
+.gestion-projet img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.gestion-projet h4  {
+  padding: 20px 40px;
+}
+
+
+
+@media (width < 1200px) {
+  .gestion-projet img {
+    height: 550px;
+  }
+}

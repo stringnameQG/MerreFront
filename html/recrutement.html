@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Merré</title>
+  <link rel="stylesheet" href="../css/Merre.css">
+  <link rel="stylesheet" href="../css/recrutement.css">
+  <link rel="stylesheet" href="../css/formulaire-recrutement.css">
+  <link rel="icon" href="../Icon/Logo-Merre.png">
+</head>
+
+<script>
+function MenuAnimation(x) {
+  x.classList.toggle("change");
+
+  const MENU_NAV = document.querySelector("nav");
+        MENU_NAV.classList.toggle("nav-expense");
+}
+function SousMenuOpen(x) {
+  x.children[1].classList.toggle("column");
+}
+</script>
+
+<body>
+  <header>
+    <img class="logo" src="../Picture/Merré.png" alt="Logo Merré" decoding="async">
+    <h1>1921 à 2025, depuis plus de 100 ans à votre service</h1>
+    
+    <div class="div-menu-container">
+      <div class="menu-container" onclick="MenuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="menu-title">MENU</p>
+    </div>
+  </header>
+  <nav>
+    <a class="nav-item" href="accueil.html">Accueil</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="marches.html">Marchés</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html">Dragage</a>
+        <a href="remorquage.html">Remorquage</a>
+        <a href="pilotage.html">Pilotage</a>
+        <a href="travaux-portuaires.html">Travaux portuaires</a>
+        <a href="defense.html">Défense</a>
+        <a href="environnement.html">Environnement</a>
+        <a href="transport-maritime.html">Transport Maritime</a>
+        <a href="transport-public.html">Transport public</a>
+      </div>
+    </div>
+    <a class="nav-item" href="produits.html">Produits</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html">Services</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="gestion-projet.html">Gestion de projet</a>
+        <a href="ingenierie.html">Ingénierie</a>
+        <a href="fabrication-sur-mesure.html">Fabrication sur mesure</a>
+        <a href="mise-en-service.html">Mise en service</a>
+        <a href="service-apres-vente.html">Service Après-Vente</a>
+      </div>
+    </div>
+    <a class="nav-item" href="qualite.html">Qualité</a>
+    <a class="nav-item" href="ingenierie.html">Ingénierie</a>
+    <a class="nav-item" href="notre-entreprise.html">Notre entreprise</a>
+    <a class="nav-item" href="notre-groupe.html">Notre groupe</a>
+    <a class="nav-item" href="Recrutement.html">Recrutement</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html"><img class="nav-icon" src="../Icon/Flag_of_France.svg" decoding="async"></a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html"><img class="nav-icon" src="../Icon/Flag_of_the_United_Kingdom.svg" decoding="async"></a>
+      </div>
+    </div>
+  </nav>
+  <main class="recrutement">
+    <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/383696bf6875.jpg?resize=960%2C720&ssl=1" alt="img presentation" decoding="async">
+    <article class="nos-offres">
+      <h4>DÉCOUVREZ NOS OFFRES</h4>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/Company-Overleg-2.jpg?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Dessinateur – Préparateur H/F</h5></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2013/07/unnamed.jpg?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Chaudronnier H/F</h5></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/383696bf6875.jpg?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Soudeur H/F</h5></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+    </article>
+    <article class="multispecialiste">
+      <h4>MERRÉ MULTISPECIALISTE</h4>
+      <section>
+        <a><h5>NOTRE HISTOIRE</h5></a>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/historique-425x250.jpg?resize=425%2C250&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><h5>NOTRE ENTREPRISE</h5></a>
+        <a><img src="https://www.merre.fr/wp-content/uploads/2017/07/montage-d-une-superstructure-bac-de-loire-lola-425x250.bmp" alt="img presentation" decoding="async"></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><h5>NOS SERVICES</h5></a>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2017/07/chaudronnier-425x250.jpg?resize=425%2C250&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+    </article>
+    <article class="rencontrez">
+      <h4>VENEZ NOUS RENCONTREZ</h4>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2023/08/IMG_6583-scaled.jpg?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Le baliseur côtier pour la Corse débute ses essais à la mer</h5></a>
+        <p>Le baliseur côtier pour la Corse entre dans sa phase finale de réalisation après sa mise à l’eau et entame ses essais.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2023/03/VSP-N2-scaled.jpg?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Le chantier MERRE entame la construction des prochaines VSP</h5></a>
+        <p>Alors que la VSP Ophrys poursuit sa phase d’évaluation opérationnelle par la Marine Nationale, le chantier MERRE a débuté en janvier 2023 la construction des 7 prochains navires.</p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+      <section>
+        <a><img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2022/10/Martinique2.png?resize=360%2C240&ssl=1" alt="img presentation" decoding="async"></a>
+        <a><h5>Le chantier MERRE concevra et construira la nouvelle vedette pour l’Office français de la biodiversité et son Parc naturel marin de Martinique</h5></a>
+        <p>Le chantier MERRE a remporté fin septembre l’appel d’offre pour la construction d’une vedette de 12m destinée au Parc naturel marin de Martinique. </p>
+        <a><strong>savoir plus &gt;</strong></a>
+      </section>
+    </article>
+    <aside class="formulaire-recrutement">
+      <h4>REJOIGNEZ NOUS</h4>
+      <div class="formulaire-contacte">
+        <p>Vous êtes intéressés par le chantier Merré et ses différents métiers. Vous souhaitez rejoindre nos équipes. N'hésitez pas à nous envoyer votre candidature via le formulaire de contact suivant :</p>
+        <div>
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" placeholder="required">
+        </div>
+        <div>
+					<label for="prénom">Prénom </label>
+					<input type="text" name="prénom " id="prénom" placeholder="required">
+        </div>
+        <div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="required">
+        </div>
+        <div>
+					<label for="objet">Objet</label>
+					<input type="text" name="objet" id="objet" placeholder="required">
+        </div>
+        <div>
+					<label for="tel">Téléphone</label>
+					<input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+					<label for="pays">Pays</label>
+					<input type="text" name="pays" id="pays" placeholder="required">
+        </div>
+        <div class="questions">
+					<label for="questions">Questions / Commentaires ?</label>
+					<textarea name="questions" id="questions" placeholder="required"></textarea>
+        </div>
+        <input class="submit" type="submit" value="Envoyer">
+			</div>
+      <div class="infos-societe">
+	      <h4>Société des Établissements Merré</h4>
+        <p><strong>Tél. :</strong> +33 (0)2 40 29 50 44</p>
+        <p><strong>Fax :</strong> +33 (0)2 40 29 52 56</p>
+        <p><strong>Email :</strong> contact@merre.fr</p>
+        <p><strong>Adresse :</strong><br>Route de Nantes<br>B.P. 57<br>44390<br>Nort sur Erdre<br>FRANCE</p><p><strong>Horaires d'ouverture :</strong><br>du lundi au jeudi :<br>07h30 à 12h00 et 13h00 à 16h00<br>le vendredi :<br>07h30 à 12h00 et 13h00 à 15h30</p>
+        <a href="https://goo.gl/maps/KfWdxN7yQM22" target="_blank" class="wpz-btn wpz-btn-1 ">Voir dans Google Maps</a>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
+    <a class="footer-link" href="informatiques-et-libertes.html">Informatiques et libertés</a>
+    <p class="p-link">Copyright © 2025 MERRÉ</p>
+  </footer>
+</body>
+</html>

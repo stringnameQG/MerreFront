@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Merré</title>
+  <link rel="stylesheet" href="../css/Merre.css">
+  <link rel="stylesheet" href="../css/informatiques-et-libertes.css">
+  <link rel="icon" href="../Icon/Logo-Merre.png">
+</head>
+
+<script>
+function MenuAnimation(x) {
+  x.classList.toggle("change");
+
+  const MENU_NAV = document.querySelector("nav");
+        MENU_NAV.classList.toggle("nav-expense");
+}
+function SousMenuOpen(x) {
+  x.children[1].classList.toggle("column");
+}
+</script>
+
+<body>
+  <header>
+    <img class="logo" src="../Picture/Merré.png" alt="Logo Merré" decoding="async">
+    <h1>1921 à 2025, depuis plus de 100 ans à votre service</h1>
+    
+    <div class="div-menu-container">
+      <div class="menu-container" onclick="MenuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="menu-title">MENU</p>
+    </div>
+  </header>
+  <nav>
+    <a class="nav-item" href="accueil.html">Accueil</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="marches.html">Marchés</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html">Dragage</a>
+        <a href="remorquage.html">Remorquage</a>
+        <a href="pilotage.html">Pilotage</a>
+        <a href="travaux-portuaires.html">Travaux portuaires</a>
+        <a href="defense.html">Défense</a>
+        <a href="environnement.html">Environnement</a>
+        <a href="transport-maritime.html">Transport Maritime</a>
+        <a href="transport-public.html">Transport public</a>
+      </div>
+    </div>
+    <a class="nav-item" href="produits.html">Produits</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html">Services</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="gestion-projet.html">Gestion de projet</a>
+        <a href="ingenierie.html">Ingénierie</a>
+        <a href="fabrication-sur-mesure.html">Fabrication sur mesure</a>
+        <a href="mise-en-service.html">Mise en service</a>
+        <a href="service-apres-vente.html">Service Après-Vente</a>
+      </div>
+    </div>
+    <a class="nav-item" href="qualite.html">Qualité</a>
+    <a class="nav-item" href="ingenierie.html">Ingénierie</a>
+    <a class="nav-item" href="notre-entreprise.html">Notre entreprise</a>
+    <a class="nav-item" href="notre-groupe.html">Notre groupe</a>
+    <a class="nav-item" href="Recrutement.html">Recrutement</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html"><img class="nav-icon" src="../Icon/Flag_of_France.svg" decoding="async"></a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html"><img class="nav-icon" src="../Icon/Flag_of_the_United_Kingdom.svg" decoding="async"></a>
+      </div>
+    </div>
+  </nav>
+  <main class="informatiques-et-libertes">
+    <article>
+      <h4>INFORMATIQUE ET LIBERTÉS</h4>
+      <h5>Informations personnelles collectées</h5>
+      <p>En France, les données personnelles sont protégées par la loi n°78-87 du 6 janvier 1978, la loi n°2004-801 du 6 août 2004, l’article L.226-13 du Code pénal et la Directive Européenne du 24 octobre 1995.
+En tout état de cause la SociétE des Etablissements Merré ne collecte des informations personnelles relatives à l’utilisateur (nom, adresse électronique, coordonnées téléphoniques) que pour le besoin des services proposés par le site, notamment pour l’inscription à des espaces de discussion par le biais de formulaires en ligne ou pour des traitements statistiques.
+L’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site le caractère obligatoire ou non des informations qu’il serait amené à fournir
+      </p>
+      <h5>Autres informations</h5>
+      <p>Ce site utilise Google Analytics, un service d’analyse de site internet fourni par Google Inc. (« Google »).
+Google Analytics utilise des cookies, qui sont des fichiers texte placés sur votre ordinateur, pour aider le site internet à analyser l’utilisation du site par ses utilisateurs. Les données générées par les cookies concernant votre utilisation du site (y compris votre adresse IP) seront transmises et stockées par Google sur des serveurs situés aux États-Unis. Google utilisera cette information dans le but d’évaluer votre utilisation du site, de compiler des rapports sur l’activité du site à destination de son éditeur et de fournir d’autres services relatifs à l’activité du site et à l’utilisation d’Internet. Google est susceptible de communiquer ces données à des tiers en cas d’obligation légale ou lorsque ces tiers traitent ces données pour le compte de Google, y compris notamment l’éditeur de ce site. Google ne recoupera pas votre adresse IP avec toute autre donnée détenue par Google. Vous pouvez désactiver l’utilisation de cookies en sélectionnant les paramètres appropriés de votre navigateur. Cependant, une telle désactivation pourrait empêcher l’utilisation de certaines fonctionnalités de ce site. En utilisant ce site internet, vous consentez expressément au traitement de vos données nominatives par Google dans les conditions et pour les finalités décrites ci-dessus.</p>
+      <h5>Rectification des informations nominatives collectées</h5>
+      <p>Conformément aux dispositions de l’article 34 de la loi n°48-87 du 6 janvier 1978, l’utilisateur dispose d’un droit de modification des données nominatives collectées le concernant. Pour ce faire, l’utilisateur envoie à la SociétE des Etablissements Merrés un courrier électronique en utilisant le formulaire de contact.
+La modification interviendra dans des délais raisonnables à compter de la réception de la demande de l’utilisateur.</p>
+      <h5>Limitation et responsabilités</h5>
+      <p>Ce site comporte des informations mises à disposition par des sociétés externes ou des liens hypertextes vers d’autres sites qui n’ont pas été développés par la SociétE des Etablissements Merré. Le contenu mis à disposition sur le site est fourni à titre informatif. L’existence d’un lien de ce site vers un autre site ne constitue pas une validation de ce site ou de son contenu. Il appartient à l’internaute d’utiliser ces informations avec discernement et esprit critique. La responsabilité de la SociétE des Etablissements Merré ne saurait être engagée du fait aux informations, opinions et recommandations formulées par des tiers.</p>
+    </article>
+  </main>
+  <footer>
+    <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
+    <a class="footer-link" href="informatiques-et-libertes.html">Informatiques et libertés</a>
+    <p class="p-link">Copyright © 2025 MERRÉ</p>
+  </footer>
+</body>
+</html>

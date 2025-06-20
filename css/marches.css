@@ -1,0 +1,44 @@
+.marches img {
+  width: 100%;
+  object-fit: cover;
+}
+.marches h4, .marches p {
+  padding: 20px 40px;
+}
+.marches h4 {
+  font-size: 2.4rem;
+}
+.marches article {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #eee;
+}
+.marches article section {
+  margin-bottom: 20px;
+  width: 31%;
+}
+.marches article section a h5 {
+  color: #224b7b;
+}
+.marches article section a h5:hover {
+  color: #2D80AD;
+}
+.marches article section p {
+  padding: 0;
+}
+
+@media (width < 1200px) {
+  .marches article {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .marches article section {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+}

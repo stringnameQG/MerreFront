@@ -1,0 +1,279 @@
+:root {
+  --slider-container-height: 550px;
+  --slide-figcaption-width: 100%;
+  
+  --label-margin: 0 0.2em 1em;
+  --label-border: 2px solid white;
+  --label-circle-diametre: 20px;
+  --label-border-radius: calc(var(--label-circle-diametre) * 2);
+
+  --slide-figcaption-font-size: 1rem;
+  --slide-figcaption-decale: 5px;
+  --slide-figcaption-bottom: calc(var(--slider-container-height) + var(--slide-figcaption-decale));
+
+  --slide-slide-title-font-size: 2.5rem;
+
+  --slide-link-padding: 10px 30px;
+
+
+  
+  --mobile-slider-container-height: 700px;
+
+  --mobile-slide-figcaption-height: calc(var(--mobile-slider-container-height) + var(--slide-figcaption-decale));
+
+  --mobile-label-margin: 0 1vw 1em;
+  --mobile-label-circle-diametre: 30px;
+  --mobile-label-border-radius: calc(var(--mobile-label-circle-diametre) * 2);
+
+  --mobile-slide-link-padding: 20px 60px;
+  --mobile-slide-link-font-size: 2.2rem;
+  --mobile-slide-link-letter-spacing: 0.2rem;
+
+  --mobile-livraison-section-time-font-size: 1.8rem;
+
+  --mobile-produits-h4-a-font-size: 3.8rem;
+}
+.slider-container {
+  max-width: 100%;
+  position: relative;
+  height: var(--slider-container-height);
+  overflow: hidden;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.menu label {
+  margin:        var(--label-margin);
+  border:        var(--label-border);
+  width:         var(--label-circle-diametre);
+  height:        var(--label-circle-diametre);
+  border-radius: var(--label-border-radius);
+  display: inline-block;
+  background: #ffffff00;
+  cursor: pointer;
+}
+.menu label:hover,.menu label:focus {
+  background: #1c87c9;
+}
+.slide-input{
+  opacity: 0;
+}
+.slide {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 11;
+  transition: left 0s 0.75s;
+}
+.slide-img {
+  width: 100%;
+  height: var(--slider-container-height);
+  object-fit: cover;
+  background-color: #444;
+}
+.slide-figcaption {
+  width: var(--slide-figcaption-width);
+  height: var(--slider-container-height);
+  position: relative;  
+  bottom: var(--slide-figcaption-bottom);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: var(--slide-figcaption-font-size);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(0, 0, 0);
+}
+.slide-figcaption:hover {
+  color: rgba(255, 255, 255, 0);
+}
+.slide-title {
+  margin: 0;
+  font-size: var(--slide-slide-title-font-size);
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.slide-link {
+  padding: var(--slide-link-padding);
+  width: fit-content;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+.slide-link:hover {
+  background-color: #1c3d63;
+  color: rgb(255, 255, 255);
+}
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 12;
+  transition: left 0.65s ease-out;
+}
+.merre-en-ce-moment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.actualites {
+  width: 54%;
+}
+.actualites section {
+  display: block;
+}
+.actualites section img {
+  position: relative;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+  max-width: 55%;
+  float: left;
+}
+.recrutement {
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.recrutement section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.recrutement section img, 
+.recrutement section div {
+  width: 48%;
+}
+.recrutement section img {
+  margin: 0 15px 15px 0;
+  width: 60%;
+  height: 200px;
+}
+.produits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1c3d63;
+  color: white;
+}
+.produits h4, 
+.produits h4 a, 
+.produits section h5, 
+.produits section a {
+  color: white;
+}
+.produits h4, 
+.produits section h5, 
+.produits section a {
+  padding: 10px 0;
+}
+.produits h4 a:hover,
+.produits section a:hover {
+  background-color: #ffffff00;
+  color: #2D80AD;
+}
+.produits h4 {
+  width: 100%;
+  padding: 30px 0;
+}
+.produits section {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.livraisons {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.livraisons section h5 {
+  margin: 10px 0;
+}
+.livraisons section time {
+  margin-top: 8px;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+article div {
+  width: 48%;
+}
+article div h4 {
+  padding-top: 10px;
+}
+iframe {
+  width: 48%;
+  height: 315px;
+}
+
+
+@media (width < 1200px) {
+  .menu label {
+    margin:        var(--mobile-label-margin);
+    width:         var(--mobile-label-circle-diametre);
+    height:        var(--mobile-label-circle-diametre);
+    border-radius: var(--mobile-label-border-radius);
+  }
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  article div {
+    width: 100%;
+  }
+  article div h4 {
+    padding-top: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 55vw;
+  }
+  .slide {
+    height: var(--mobile-slider-container-height);
+  }
+  .slider-container, .slide-img {
+    height: var(--mobile-slider-container-height);
+  }
+  .slide-figcaption {
+    bottom: var(--mobile-slide-figcaption-height);
+    height: var(--mobile-slider-container-height);
+    gap: 70px;
+  }
+  .slide-link {
+    padding:        var(--mobile-slide-link-padding);
+    font-size:      var(--mobile-slide-link-font-size);
+    letter-spacing: var(--mobile-slide-link-letter-spacing);
+    font-weight: 600;
+  }
+  .actualites, .recrutement {
+    width: 100%;
+    flex-direction: column;
+  }
+  .actualites section img, .recrutement section img {
+    height: 240px;
+  }
+  .livraisons section time {
+    font-size: var(--mobile-livraison-section-time-font-size);
+  }
+  .produits {
+    flex-direction: column;
+  }
+  .produits h4 a {
+    font-size: var(--mobile-produits-h4-a-font-size);
+  }
+  .produits section {
+    width: 100%;
+  }
+}

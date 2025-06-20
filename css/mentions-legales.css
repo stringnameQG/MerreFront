@@ -1,0 +1,29 @@
+.mentions-legales {
+  background-color: #eee;;
+}
+.mentions-legales h4 {
+  font-size: 2.6rem;
+}
+.mentions-legales article h5 {
+  font-size: 1.6rem;
+}
+.mentions-legales article p {
+  font-size: 1rem;
+}
+
+
+
+@media (width < 1200px) {
+  .mentions-legales {
+    margin-top: 30px;
+  }
+  .mentions-legales h4 {
+    font-size: 4rem;
+  }
+  .mentions-legales article h5 {
+    font-size: 3.2rem;
+  }
+  .mentions-legales article p {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,19 @@
+.notre-entreprise img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.notre-entreprise h4  {
+  padding: 20px 40px;
+}
+.notre-entreprise h5,
+.notre-entreprise p {
+  padding: 0 40px;
+}
+
+
+@media (width < 1200px) {
+  .notre-entreprise img {
+    height: 550px;
+  }
+}

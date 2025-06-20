@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Merré</title>
+  <link rel="stylesheet" href="../css/Merre.css">
+  <link rel="stylesheet" href="../css/accueil.css">
+  <link rel="stylesheet" href="../css/produits.css">
+  <link rel="stylesheet" href="../css/formulaire-contacte.css">
+  <link rel="icon" href="../Icon/Logo-Merre.png">
+</head>
+
+<script>
+function MenuAnimation(x) {
+  x.classList.toggle("change");
+
+  const MENU_NAV = document.querySelector("nav");
+        MENU_NAV.classList.toggle("nav-expense");
+}
+function SousMenuOpen(x) {
+  x.children[1].classList.toggle("column");
+}
+</script>
+
+<body>
+  <header>
+    <img class="logo" src="../Picture/Merré.png" alt="Logo Merré" decoding="async">
+    <h1>1921 à 2025, depuis plus de 100 ans à votre service</h1>
+    
+    <div class="div-menu-container">
+      <div class="menu-container" onclick="MenuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="menu-title">MENU</p>
+    </div>
+  </header>
+  <nav>
+    <a class="nav-item" href="accueil.html">Accueil</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="marches.html">Marchés</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html">Dragage</a>
+        <a href="remorquage.html">Remorquage</a>
+        <a href="pilotage.html">Pilotage</a>
+        <a href="travaux-portuaires.html">Travaux portuaires</a>
+        <a href="defense.html">Défense</a>
+        <a href="environnement.html">Environnement</a>
+        <a href="transport-maritime.html">Transport Maritime</a>
+        <a href="transport-public.html">Transport public</a>
+      </div>
+    </div>
+    <a class="nav-item" href="produits.html">Produits</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html">Services</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="gestion-projet.html">Gestion de projet</a>
+        <a href="ingenierie.html">Ingénierie</a>
+        <a href="fabrication-sur-mesure.html">Fabrication sur mesure</a>
+        <a href="mise-en-service.html">Mise en service</a>
+        <a href="service-apres-vente.html">Service Après-Vente</a>
+      </div>
+    </div>
+    <a class="nav-item" href="qualite.html">Qualité</a>
+    <a class="nav-item" href="ingenierie.html">Ingénierie</a>
+    <a class="nav-item" href="notre-entreprise.html">Notre entreprise</a>
+    <a class="nav-item" href="notre-groupe.html">Notre groupe</a>
+    <a class="nav-item" href="Recrutement.html">Recrutement</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html"><img class="nav-icon" src="../Icon/Flag_of_France.svg" decoding="async"></a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html"><img class="nav-icon" src="../Icon/Flag_of_the_United_Kingdom.svg" decoding="async"></a>
+      </div>
+    </div>
+  </nav>
+  <main class="produits">
+    <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2020/05/bac_24_rouen_18_05_2020_2-e1612251642612.jpg?resize=845%2C435&ssl=1"  alt="picture presentation" decoding="async">
+    <h4><a href="produits">UN NAVIRE POUR VOTRE BESOIN</a></h4>
+    <section>
+      <h5>DRAGAGE & EQUIPEMENT</h5>
+      <a>Drague aspiratrice</a>
+      <a>Drague polyvalente</a>
+    </section>
+    <section>
+      <h5>PONTON & BARGE</h5>
+      <a>Barge multiservice SEEM 12-370ST</a>
+      <a>Barge multiservice SEEM 14-1200ST</a>
+    </section>
+    <section>
+      <h5>DEFENSE</h5>
+      <a>Patrouilleur SEEM 8-150AL</a>
+      <a>VSP SEEM 26-880AL</a>
+    </section>
+    <section>
+      <h5>REMORQUAGE</h5>
+      <a>Remorqueur SEEM 12-800ST</a>
+      <a>Remorqueur SEEM 14-1000ST</a>
+    </section>
+    <section>
+      <h5>TRANSPORT MARTIME</h5>
+      <a>Pax SEEM 25-2840AL</a>
+      <a>Pax SEEM 30-1060AL</a>
+    </section>
+    <section>
+      <h5>PILOTAGE</h5>
+      <a>Pilote SEEM 12-400ST</a>
+      <a>Pilote SEEM 12-530AL</a>
+    </section>
+    <section>
+      <h5>TRAVAUX PORTUAIRES</h5>
+      <a>Vedette de lamanage SEEM 8-305ST</a>
+      <a>Vedette multiservice SEEM 16-710ST</a>
+    </section>
+    <section>
+      <h5>ENVIRONNEMENT</h5>
+      <a>Navire dépollueur SEEM 8-60AL</a>
+      <a>Vedette hydrographique SEEM 12-340ST</a>
+    </section>
+    <section>
+      <h5>ACCESSOIRES</h5>
+      <a>Tuyère</a>
+    </section>
+  </main>
+  <aside class="livraisons">
+    <h4>DERNIERES LIVRAISONS</h4>
+    <section>
+      <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2020/12/DSC019621.jpg?resize=360%2C240&ssl=1" alt="picture presentation" decoding="async">
+      <time datetime="2018-07-07">2018-07-07</time>
+      <h5><a>Barge multiservice SEEM 20-1000ST “Benthos”</a></h5>
+      <p>En s'appuyant sur les compétences, le savoir faire de ses équipes, et sur une organisation moderne, Merré contrôle l’ensemble de la chaîne de création de valeur de la construction d'un navire, depuis l'architecture, la conception, l'ingénierie, jusqu’à la construction, l’armement, la vente et l’après-vente des unités.</p>
+      <a><strong>savoir plus &gt;</strong></a>
+    </section>
+    <section>
+      <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2020/12/IMG_1710-scaled.jpg?resize=360%2C240&ssl=1" alt="picture presentation" decoding="async">
+      <time datetime="2018-07-07">2018-07-07</time>
+      <h5><a>NOS SERVICES</a></h5>
+      <p>En s'appuyant sur les compétences, le savoir faire de ses équipes, et sur une organisation moderne, Merré contrôle l’ensemble de la chaîne de création de valeur de la construction d'un navire, depuis l'architecture, la conception, l'ingénierie, jusqu’à la construction, l’armement, la vente et l’après-vente des unités.</p>
+      <a><strong>savoir plus &gt;</strong></a>
+    </section>
+    <section>
+      <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2019/10/IMG_0482.jpg?resize=360%2C240&ssl=1" alt="picture presentation" decoding="async">
+      <time datetime="2018-07-07">2018-07-07</time>
+      <h5><a>NOS SERVICES</a></h5>
+      <p>En s'appuyant sur les compétences, le savoir faire de ses équipes, et sur une organisation moderne, Merré contrôle l’ensemble de la chaîne de création de valeur de la construction d'un navire, depuis l'architecture, la conception, l'ingénierie, jusqu’à la construction, l’armement, la vente et l’après-vente des unités.</p>
+      <a><strong>savoir plus &gt;</strong></a>
+    </section>
+    <section>
+      <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2019/02/IMG_1779-e1612251332464.jpg?resize=360%2C240&ssl=1" alt="picture presentation" decoding="async">
+      <time datetime="2018-07-07">2018-07-07</time>
+      <h5><a>NOS SERVICES</a></h5>
+      <p>En s'appuyant sur les compétences, le savoir faire de ses équipes, et sur une organisation moderne, Merré contrôle l’ensemble de la chaîne de création de valeur de la construction d'un navire, depuis l'architecture, la conception, l'ingénierie, jusqu’à la construction, l’armement, la vente et l’après-vente des unités.</p>
+      <a><strong>savoir plus &gt;</strong></a>
+    </section>
+  </aside>
+  <footer>
+    <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
+    <a class="footer-link" href="informatiques-et-libertes.html">Informatiques et libertés</a>
+    <p class="p-link">Copyright © 2025 MERRÉ</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Merré</title>
+  <link rel="stylesheet" href="../css/Merre.css">
+  <link rel="stylesheet" href="../css/notre-entreprise.css">
+  <link rel="stylesheet" href="../css/formulaire-contacte.css">
+  <link rel="icon" href="../Icon/Logo-Merre.png">
+</head>
+
+<script>
+function MenuAnimation(x) {
+  x.classList.toggle("change");
+
+  const MENU_NAV = document.querySelector("nav");
+        MENU_NAV.classList.toggle("nav-expense");
+}
+function SousMenuOpen(x) {
+  x.children[1].classList.toggle("column");
+}
+</script>
+
+<body>
+  <header>
+    <img class="logo" src="../Picture/Merré.png" alt="Logo Merré" decoding="async">
+    <h1>1921 à 2025, depuis plus de 100 ans à votre service</h1>
+    
+    <div class="div-menu-container">
+      <div class="menu-container" onclick="MenuAnimation(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="menu-title">MENU</p>
+    </div>
+  </header>
+  <nav>
+    <a class="nav-item" href="accueil.html">Accueil</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="marches.html">Marchés</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html">Dragage</a>
+        <a href="remorquage.html">Remorquage</a>
+        <a href="pilotage.html">Pilotage</a>
+        <a href="travaux-portuaires.html">Travaux portuaires</a>
+        <a href="defense.html">Défense</a>
+        <a href="environnement.html">Environnement</a>
+        <a href="transport-maritime.html">Transport Maritime</a>
+        <a href="transport-public.html">Transport public</a>
+      </div>
+    </div>
+    <a class="nav-item" href="produits.html">Produits</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html">Services</a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="gestion-projet.html">Gestion de projet</a>
+        <a href="ingenierie.html">Ingénierie</a>
+        <a href="fabrication-sur-mesure.html">Fabrication sur mesure</a>
+        <a href="mise-en-service.html">Mise en service</a>
+        <a href="service-apres-vente.html">Service Après-Vente</a>
+      </div>
+    </div>
+    <a class="nav-item" href="qualite.html">Qualité</a>
+    <a class="nav-item" href="ingenierie.html">Ingénierie</a>
+    <a class="nav-item" href="notre-entreprise.html">Notre entreprise</a>
+    <a class="nav-item" href="notre-groupe.html">Notre groupe</a>
+    <a class="nav-item" href="Recrutement.html">Recrutement</a>
+    <div class="nav-item dropdown" onclick="SousMenuOpen(this)">
+      <div class="nav-div">
+        <a class="dropbtn" href="services.html"><img class="nav-icon" src="../Icon/Flag_of_France.svg" decoding="async"></a>
+        <img class="nav-icon" src="../Icon/arrow-down-alt2.svg" decoding="async">
+      </div>
+      <div class="dropdown-content">
+        <a href="dragage.html"><img class="nav-icon" src="../Icon/Flag_of_the_United_Kingdom.svg" decoding="async"></a>
+      </div>
+    </div>
+  </nav>
+  <main class="notre-entreprise">
+    <img src="https://i0.wp.com/www.merre.fr/wp-content/uploads/2021/01/1-scaled.jpg?resize=2000%2C800&ssl=1">
+    <h4>Politique Qualité</h4>
+    <h5>Merré le multispécialiste de la construction navale</h5>
+    <p>L’entreprise réalise des unités allant de 12 à 80 mètres en acier et/ou en aluminium.
+
+Le chantier Merré est reconnu comme le multispécialiste dans le monde de la construction navale.
+
+En s'appuyant à la fois sur les compétences et le savoir faire de ses équipes, et sur une organisation moderne Merré contrôle l’ensemble de la chaîne de création de valeur de la construction d'un navire, depuis l'architecture, la conception, et l'ingénierie jusqu’à la construction sur mesure, l’armement, la vente et l’après-vente des unités.
+
+Le chantier Merré est le seul chantier naval Français spécialiste du dragage, maîtrisant le dragage en mouvement, le dragage stationnaire, le procédé de dragage genflo, et l'ensemble des équipements de dragage utilisés par les professionnels.
+
+Deux implantations : Merré est implanté à Nort-sur-Erdre (siège et site de production) et à Saint-Nazaire (construction des plus grosses unités grâce aux infrastructures du port autonome et accès direct à la mer).</p>
+    <h5>Compétences de l'entreprise</h5>
+    <ul>
+      <li>Architecte naval</li>
+      <li>Ingénieurs</li>
+      <li>Techniciens et administratifs</li>
+      <li>Chaudronniers</li>
+      <li>Soudeurs</li>
+      <li>Usineurs</li>
+      <li>Mécaniciens</li>
+      <li>Hydrauliciens</li>
+      <li>Peintres</li>
+      <li>Monteurs</li>
+    </ul>
+    <h5>Moyens d'étude et de production</h5>
+    <ul>
+      <li>Superficie du chantier = 70000 m²</li>
+      <li>Surface atelier = 7200 m²</li>
+      <li>Bureaux = 300 m²</li>
+      <li>Hall sablage / peinture = 700 m²</li>
+      <li>Rampe de lancement :  160 t</li>
+      <li>Bureau d’études : AutoCad, Rhinocéros, MaatHydro, ...</li>
+      <li>Hall de formage : presses (7 m), cisailles, rouleuses (grande largeur), oxycoupage</li>
+      <li>Hall d’usinage : tours, fraiseuses, mortaiseuses, aléseuses</li>
+      <li>Hall d’assemblage : soudage acier, aluminium, et inox</li>
+    </ul>
+    <h5>Plusieurs centaines de navires réalisés depuis la création du chantier en 1921</h5>
+    <ul>
+      <li>Drague aspiratrice</li>
+      <li>Drague polyvalente</li>
+      <li>Dragues stationnaires</li>
+      <li>Chalands</li>
+      <li>Pontons</li>
+      <li>Remorqueurs</li>
+      <li>Barges</li>
+      <li>Vedettes de pilotage</li>
+      <li>Bacs amphidromes et transbordeurs</li>
+      <li>Navires de cargaison</li>
+      <li>Navires à passagers</li>
+      <li>Navires de pêche</li>
+    </ul>
+    <aside class="formulaire">
+      <h4>CONTACT</h4>
+      <div class="formulaire-contacte">
+        <p>Pour des questions générales, veuillez utiliser le formulaire de contact suivant :</p>
+        <div>
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" placeholder="required">
+        </div>
+        <div>
+					<label for="prénom">Prénom </label>
+					<input type="text" name="prénom " id="prénom" placeholder="required">
+        </div>
+        <div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="required">
+        </div>
+        <div>
+					<label for="objet">Objet</label>
+					<input type="text" name="objet" id="objet" placeholder="required">
+        </div>
+        <div>
+					<label for="tel">Téléphone</label>
+					<input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+					<label for="pays">Pays</label>
+					<input type="text" name="pays" id="pays" placeholder="required">
+        </div>
+        <div class="questions">
+					<label for="questions">Questions / Commentaires ?</label>
+					<textarea name="questions" id="questions" placeholder="required"></textarea>
+        </div>
+        <input class="submit" type="submit" value="Envoyer">
+			</div>
+      <div class="infos-societe">
+	      <h4>Société des Établissements Merré</h4>
+        <p><strong>Tél. :</strong> +33 (0)2 40 29 50 44</p>
+        <p><strong>Fax :</strong> +33 (0)2 40 29 52 56</p>
+        <p><strong>Email :</strong> contact@merre.fr</p>
+        <p><strong>Adresse :</strong><br>Route de Nantes<br>B.P. 57<br>44390<br>Nort sur Erdre<br>FRANCE</p><p><strong>Horaires d'ouverture :</strong><br>du lundi au jeudi :<br>07h30 à 12h00 et 13h00 à 16h00<br>le vendredi :<br>07h30 à 12h00 et 13h00 à 15h30</p>
+        <a href="https://goo.gl/maps/KfWdxN7yQM22" target="_blank" class="wpz-btn wpz-btn-1 ">Voir dans Google Maps</a>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
+    <a class="footer-link" href="informatiques-et-libertes.html">Informatiques et libertés</a>
+    <p class="p-link">Copyright © 2025 MERRÉ</p>
+  </footer>
+</body>
+</html>
